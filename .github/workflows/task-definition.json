@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::506520635978:role/ecsTaskExecutionRole",
+  "executionRoleArn": "insert execution role here",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -42,7 +42,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "506520635978.dkr.ecr.us-east-2.amazonaws.com/demo-deploy",
+      "image": "insert image here",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -64,19 +64,19 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": "arn:aws:iam::506520635978:role/ecsTaskExecutionRole",
+  "taskRoleArn": "insert task role arn here",
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:506520635978:task-definition/demo-deploy:2",
+  "taskDefinitionArn": "insert task definition here",
   "family": "demo-deploy",
   "requiresAttributes": [
     {
       "targetId": null,
       "targetType": null,
       "value": null,
-      "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+      "name": "insert name here"
     },
     {
       "targetId": null,

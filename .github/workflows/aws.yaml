@@ -7,11 +7,11 @@ on:
 
 env:
   AWS_REGION: us-east-2                
-  ECR_REPOSITORY: demo-deploy          
-  ECS_SERVICE: demo-deploy                
-  ECS_CLUSTER: demo-deploy                 
+  ECR_REPOSITORY: # insert ecr repository here          
+  ECS_SERVICE: # insert ecs service here                
+  ECS_CLUSTER: # ecs cluster                 
   ECS_TASK_DEFINITION: .github/workflows/task-definition.json                                                 
-  CONTAINER_NAME: demo-deploy           
+  CONTAINER_NAME: # container given name          
                                                
 
 permissions:
@@ -30,8 +30,8 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        role-to-assume: arn:aws:iam::506520635978:role/Github
-        role-session-name: Github
+        role-to-assume: insert data here
+        role-session-name: insert name here
         aws-region: ${{ env.AWS_REGION }}
 
     - name: Login to Amazon ECR
